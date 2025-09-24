@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero-accent {
+  /* subtle orange dot near headline like the mock */
+  position: relative;
+}
+.hero-accent::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background:black;
+  border-radius: 9999px;
+  margin-left: 0px;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
