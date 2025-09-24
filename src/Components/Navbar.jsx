@@ -50,11 +50,11 @@ function Navbar() {
       {open && (
         <div className="md:hidden border-t bg-white">
           <div className="px-6 py-4 flex flex-col gap-3 text-gray-700">
-            <a href="#home" onClick={() => setOpen(false)} className="py-2">Home</a>
-            <a href="#about" onClick={() => setOpen(false)} className="py-2">About Us</a>
-            <a href="#solutions" onClick={() => setOpen(false)} className="py-2">Solutions</a>
-            <a href="#pricing" onClick={() => setOpen(false)} className="py-2">Pricing</a>
-            <a href="#support" onClick={() => setOpen(false)} className="py-2">Support</a>
+             <Link to="/"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>Home</Link>
+              <Link to="/about"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>About Us</Link>
+              <Link to="/service"  onClick={() => setOpen(false)}  className='py-2 hover:text-black transition'>Pricing</Link>
+              <Link to="/solution" onClick={() => setOpen(false)}  className='py-2 hover:text-black transition'>Solution</Link>
+              <Link to="/support"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>Support</Link>
             <a href="#join" onClick={() => setOpen(false)} className="mt-2 inline-block bg-black text-white text-center px-4 py-2 rounded-[3px]">Join us</a>
           </div>
         </div>
