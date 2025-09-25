@@ -63,7 +63,7 @@ function HomePage() {
     </section>
 
 
-    <section className=" text-center max-w-7xl mx-auto px-6 md:px-8 py-20">
+    <section className=" text-center max-w-7xl mx-auto px-6 md:px-8 py-10">
           <h1 className=" font-light text-[30px]">What We Offer</h1>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="p-6 text-left">
@@ -85,7 +85,7 @@ function HomePage() {
       </section>
 
 
-    <section className="max-w-6xl mx-auto py-12 px-4">
+    <section className="max-w-6xl mx-auto py-10 px-4">
       <div className="text-center mb-[20px]">
         <h3 className="text-[30px] font-light text-gray-500">How it works</h3>
       </div>
@@ -207,7 +207,7 @@ function HomePage() {
   
 
       <Testimonial />
-      {/* <Newsletter/> */}
+      <Newsletter/>
       <Footer/>
      </>
   );
