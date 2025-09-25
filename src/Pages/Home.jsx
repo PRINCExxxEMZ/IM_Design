@@ -6,9 +6,11 @@ import img from "../assets/image_fx (8).jpg";
 import img2 from "../assets/pay-per-click-login-website-payment-graphic-concept.svg";
 import img3 from "../assets/image_fx (9).svg";
 import img4 from "../assets/App.svg";
+import bgImage from "../assets/Overlay.svg";
 import img5 from "../assets/Ads.svg";
 import SDK from "../assets/Sdk.svg";
 import Live from "../assets/Live.svg";
+import Nsf from "../assets/NFSC.svg";
 import Earn from "../assets/Earn.svg";
 import { ArrowRight } from "lucide-react";
 import Main from "../assets/advertising-advetise-consumer-advertisement-icon.jpg";
@@ -43,14 +45,14 @@ function HomePage() {
         <div className="mt-8 flex justify-center gap-4">
           <a
             href="#get-started"
-            className="inline-flex items-center gap-2 bg-black text-white px-8 py-3 rounded-[3px] font-medium shadow hover:scale-[0.99] transition"
+            className="inline-flex items-center text-sm gap-2 bg-black text-white px-8 py-3 rounded-[3px] font-medium shadow hover:scale-[0.99] transition"
           >
             Get Started
           </a>
 
           <a
             href="#advertise"
-            className="inline-flex items-center gap-2 border border-gray-300 px-6 py-3 rounded-[3px] text-gray-700 hover:bg-gray-50 transition"
+            className="inline-flex items-center text-sm gap-2 border border-gray-300 px-6 py-3 rounded-[3px] text-gray-700 hover:bg-gray-50 transition"
           >
             Advertise with us
           </a>
@@ -67,17 +69,17 @@ function HomePage() {
             <div className="p-6 text-left">
                 <h2 className=" font-bold">Publish First</h2>
                 <p>Real-time Dashboard payouts</p>
-               <img src={img} alt="Main" className="mt-12 rounded-[3px]"/>
+               <img src={img} alt="Main" className="mt-5 rounded-[3px]"/>
             </div>
             <div className="p-6 text-left">
                 <h2 className=" font-bold">Brand Safety</h2>
                 <p>Pre-verified advertiser pool</p>
-               <img src={img2} alt="Main" className="mt-12 rounded-[3px]"/>
+               <img src={img2} alt="Main" className="mt-5 rounded-[3px]"/>
             </div>
             <div className="p-6 text-left">
                 <h2 className=" font-bold">Transparent</h2>
                 <p>No hidden fees, full analytics</p>
-               <img src={img3} alt="Main" className="mt-12 rounded-[3px]"/>
+               <img src={img3} alt="Main" className="mt-5 rounded-[3px]"/>
             </div>
           </div>
       </section>
@@ -133,25 +135,79 @@ function HomePage() {
       </div>
     </section>
 
-      <section className="text-left max-w-7xl mx-auto px-6 md:px-8 py-20">
-          <h1 className="mb-[10px] font-light text-[30px]">Publisher & Advertiser</h1>
+      <section className="text-center max-w-7xl mx-auto px-6 md:px-8 py-20">
+          <h3 className="text-[30px] font-light text-gray-500">Publisher & Advertiser</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl px-6 py-2">
-            <div>
+            <div className="text-left">
                <img src={img4} alt="Main" className="mt-12 rounded-[3px]"/>
                <h2>Have an App?</h2>
                <Link className=" items-center flex gap-2">Publisher Sign up <ArrowRight /></Link>
             </div>
-            <div>
+            <div className="text-left">
                <img src={img5} alt="Main" className="mt-12 rounded-[3px]"/>
                <h2>Have an App?</h2>
-               <Link className="  flex gap-2 items-center ">Publisher Sign up <ArrowRight /></Link>
+               <Link className="flex gap-2 items-center ">Publisher Sign up <ArrowRight /></Link>
             </div>
           </div>
       </section>
 
+      <section className="text-center md:text-left  mx-auto px-6 md:px-[120px] py-20 bg-black">
+        <div className="md:flex md:justify-between md:items-center">
+        <div>
+          <div className="gap-y-5">
+          <p className=" font-semi-bold text-[#f6a11a] text-sm">Partnership Event</p>
+          <h2 className="mt-4 font-medium text-[40px] text-white">Blaccole x The Musketeers</h2>
+          <p className="pb-10 px-4 md:w-[600px] md:px-0 text-white">
+            NSFC stands for Not Safe For Children, and it is more  than a product. It is a new safety standard for the internet itself.
+          </p>
+          </div>
+             <a
+            href="https://blaccole.com/nsfc/"
+            className="inline-flex items-center px-8 py-2 rounded-[3px] bg-white text-black font-medium shadow hover:opacity-95 transition"
+          >
+            Explore
+          </a>
+        </div>
+              <img src={Nsf} alt=""/>
+        </div>
+      </section>
 
-      <Testimonial/>
-      <Newsletter/>
+
+<header
+      className="relative h-[60vh] min-h-[420px] flex items-center bg-black"
+      aria-label="Hero section"
+      style={{
+        backgroundImage: `url(${bgImage})`, 
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Content */}
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <p className="text-sm text-gray-800 mb-2">Partner</p>
+
+        <h1 className="text-3xl md:text-7xl font-bold text-white">
+          Blaccole
+        </h1>
+
+        <p className="mt-4 text-lg md:text-3xl text-amber-600 font-semibold">
+          Innovation, Impact and a vision for <span className="block">Africa’s Future</span>
+        </p>
+
+        <div className="mt-8 flex justify-center gap-4">
+          <a
+            href="https://www.blaccole.com/"
+            className="inline-flex items-center px-8 py-2 rounded-[3px] bg-black text-white font-medium shadow hover:opacity-95 transition"
+          >
+            Read More
+          </a>
+        </div>
+      </div>
+    </header>
+  
+
+      <Testimonial />
+      {/* <Newsletter/> */}
       <Footer/>
      </>
   );

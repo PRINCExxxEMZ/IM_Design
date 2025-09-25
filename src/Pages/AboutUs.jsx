@@ -5,6 +5,12 @@ function AboutUs() {
   return (
     <>
     <Navbar/>
+
+    
+
+
+
+
     <div>AboutUs</div>
     </>
   )
