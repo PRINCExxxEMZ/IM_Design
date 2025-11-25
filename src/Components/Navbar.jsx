@@ -17,21 +17,28 @@ function Navbar() {
             </div>
 
           </div>
+          <div className="flex items-center gap-4">
+
             <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
               <Link to="/" className='hover:text-black transition'>Home</Link>
               <Link to="/about" className='hover:text-black transition'>About Us</Link>
-              <Link to="/service" className='hover:text-black transition'>Pricing</Link>
-              <Link to="/solution" className='hover:text-black transition'>Solution</Link>
-              <Link to="/support" className='hover:text-black transition'>Support</Link>
+              <Link to="/service" className='hover:text-black transition'>Product</Link>
+              <Link to="/solution" className='hover:text-black transition'>Contact</Link>
+              <Link to="/support" className='hover:text-black transition'>More</Link>
             </nav>
 
           
-          <div className="flex items-center gap-4">
             <button
-              className="hidden md:inline-block bg-black text-white px-5 py-2 rounded-[3px] shadow-sm hover:opacity-95 transition"
+              className="hidden md:inline-block border-black border-2 text-black px-4 py-1 rounded-[3px] shadow-sm hover:opacity-95 transition"
               aria-label="Join us"
             >
-              Join us
+              Sign In
+            </button>
+            <button
+              className="hidden md:inline-block bg-black text-white px-5 py-1 rounded-[3px] shadow-sm hover:opacity-95 transition"
+              aria-label="Join us"
+            >
+              Start
             </button>
 
             {/* mobile menu button */}
@@ -52,10 +59,11 @@ function Navbar() {
           <div className="px-6 py-4 flex flex-col gap-3 text-gray-700">
              <Link to="/"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>Home</Link>
               <Link to="/about"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>About Us</Link>
-              <Link to="/service"  onClick={() => setOpen(false)}  className='py-2 hover:text-black transition'>Pricing</Link>
-              <Link to="/solution" onClick={() => setOpen(false)}  className='py-2 hover:text-black transition'>Solution</Link>
-              <Link to="/support"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>Support</Link>
-            <a href="#join" onClick={() => setOpen(false)} className="mt-2 inline-block bg-black text-white text-center px-4 py-2 rounded-[3px]">Join us</a>
+              <Link to="/service"  onClick={() => setOpen(false)}  className='py-2 hover:text-black transition'>Product</Link>
+              <Link to="/solution" onClick={() => setOpen(false)}  className='py-2 hover:text-black transition'>Contact</Link>
+              <Link to="/support"  onClick={() => setOpen(false)} className='py-2 hover:text-black transition'>More</Link>
+            <a href="#join" onClick={() => setOpen(false)} className="mt-2 inline-block border-2 border-black text-black text-center px-4 py-1 rounded-[3px]">Sign In</a>
+            <a href="#join" onClick={() => setOpen(false)} className="mt-2 inline-block bg-black text-white text-center px-4 py-2 rounded-[3px]">Start</a>
           </div>
         </div>
       )}
