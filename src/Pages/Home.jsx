@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import img from "../assets/HEro__mina.png";
 import Navbar from "../Components/Navbar";
+import WhatWeBuild from "../Components/WhatWe";
+import WhyWeMatter from "../Components/WhyWeMatter";
+import ReadyToConnect from "../Components/Ready";
 
 function HomePage() {
   return (
@@ -75,6 +78,12 @@ function HomePage() {
         </div>
       </section>
     </div>
+
+    <WhatWeBuild/>
+
+    <WhyWeMatter/>
+
+    <ReadyToConnect/>
 
      </>
   );
