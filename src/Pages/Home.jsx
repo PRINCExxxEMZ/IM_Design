@@ -5,6 +5,7 @@ import Navbar from "../Components/Navbar";
 import WhatWeBuild from "../Components/WhatWe";
 import WhyWeMatter from "../Components/WhyWeMatter";
 import ReadyToConnect from "../Components/Ready";
+import Footer from "../Components/Footer";
 
 function HomePage() {
   return (
@@ -84,6 +85,8 @@ function HomePage() {
     <WhyWeMatter/>
 
     <ReadyToConnect/>
+
+    <Footer/>
 
      </>
   );
