@@ -65,7 +65,7 @@ export default function WhyWeMatter() {
               viewport={{ once: true }}
               className="space-y-3"
             >
-              <div className="w-full h-40 bg-gray-200 rounded-md overflow-hidden">
+              <div className="w-full h-40 bg-gray-200 rounded-[3px] overflow-hidden">
                 <img
                   src={item.img}
                   alt={item.title}

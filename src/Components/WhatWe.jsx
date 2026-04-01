@@ -45,7 +45,7 @@ export default function WhatWeBuild() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.7 }}
-            className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+            className="bg-white rounded-[3px] overflow-hidden shadow-sm hover:shadow-md transition"
           >
             <img src={img1} className="w-full h-56 object-cover" alt="Safe SIM" />
 
@@ -70,7 +70,7 @@ export default function WhatWeBuild() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.9 }}
-            className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+            className="bg-white rounded-[3px] overflow-hidden shadow-sm hover:shadow-md transition"
           >
             <img src={img2} className="w-full h-56 object-cover" alt="Ad Engine" />
 

@@ -29,7 +29,7 @@ export default function ReadyToConnect() {
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-white text-black font-medium rounded-md shadow-md"
+            className="px-6 py-3 bg-white text-black font-medium rounded-[3px] shadow-md"
           >
             Contact
           </motion.a>
@@ -38,7 +38,7 @@ export default function ReadyToConnect() {
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 border border-white text-white font-medium rounded-md"
+            className="px-6 py-3 border border-white text-white font-medium rounded-[3px]"
           >
             Explore
           </motion.a>

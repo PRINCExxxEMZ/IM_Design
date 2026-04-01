@@ -16,16 +16,16 @@ function HomePage() {
       {/* ================= HERO ================= */}
       <section >
         
-        {/* LEFT CONTENT */}
+        {/*CONTENT*/}
         <motion.div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 md:gap-20 items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
-            Creating technology <br />
-            that protects and <br />
-            empowers
+            Creating technology <br/>
+            that protects and  
+            <span className=" text-"> empowers</span> 
           </h1>
         <div>
           <p className="text-gray-700 mt-5 max-w-md">
@@ -35,17 +35,17 @@ function HomePage() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 mt-6">
-            <button className="bg-black text-white px-6 py-3 rounded-md shadow hover:opacity-90 transition">
+            <button className="bg-black text-white px-6 py-3 rounded-[3px] shadow hover:opacity-90 transition">
               Explore Safe SIM
             </button>
-            <button className="text-black px-6 py-3 hover:opacity-90 transition">
+            <button className="text-black px-6 py-3 rounded-[3px] hover:opacity-90 transition">
               Discover Ad Engine
             </button>
           </div>
           </div>
         </motion.div>
 
-        {/* RIGHT IMAGE */}
+        {/*IMAGE*/}
         <motion.img
           src={img}
           alt="Team working"
@@ -69,10 +69,10 @@ function HomePage() {
 
           {/* Buttons */}
           <div className="flex justify-center gap-4 mt-8">
-            <button className="border px-6 py-2 rounded-md hover:bg-gray-100 transition">
+            <button className="border px-6 py-2 rounded-[3px] hover:bg-gray-100 transition">
               Learn
             </button>
-            <button className="border px-6 py-2 rounded-md hover:bg-gray-100 transition">
+            <button className="border px-6 py-2 rounded-[3px] hover:bg-gray-100 transition">
               Explore
             </button>
           </div>
