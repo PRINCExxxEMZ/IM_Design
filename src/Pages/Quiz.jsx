@@ -3,7 +3,7 @@ import { BarChart, Cell, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 
 
 const students = [
     { id: 1, name: "Timi Oni", score: 90, comment: "Great improvement, keep it up!" },
-    { id: 2, name: "Toluwaleyi Ade-Oni", score: "none", comment: "none" },
+    { id: 2, name: "Toluwaleyi Ade-Oni", score: 90, comment: "Great Performance & Very Insightful" },
     { id: 3, name: "Feyi", score: 90, comment: "Excellent performance!." },
 
 ];
