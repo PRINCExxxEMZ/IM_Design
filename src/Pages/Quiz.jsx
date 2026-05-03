@@ -8,6 +8,13 @@ const students = [
 
 ];
 
+const student = [
+    { id: 1, name: "Timi Oni", score: 90, comment: "Great improvement & Focused on a Path, Very Exciting!" },
+    { id: 2, name: "Toluwaleyi Ade-Oni", score: 90, comment: "Good Performance & Innovative" },
+    { id: 3, name: "Feyi", score: 85, comment: "Very Good, keep it up!" },
+
+];
+
 
 const getBarColor = (score) => {
     if (score >= 90) return "#22C55E"; // green
@@ -24,7 +31,7 @@ export default function QuizResults() {
                 <h1 className="text-3xl font-bold mb-6 text-center">
                     ARK <br />Quiz Results Dashboard
                 </h1>
-                <p className="text-gray-800 mb-6 text-center bg-green-200 p-4 rounded-lg">
+                <p className="text-gray-800 mb-6 text-center font-semibold bg-green-200 p-4 rounded-lg">
                     All Assessment Results will be displayed here. Moving forward stay updated!
                 </p>
 
@@ -75,7 +82,7 @@ export default function QuizResults() {
                 </section>
 
                 <section className="mb-10">
-                    <h2 className="text-md font-semibold my-4">Quiz Title: Coming Soon.......</h2>
+                    <h2 className="text-md font-semibold my-4">Quiz Title: April <span className="rounded-full px-2 p-1 bg-green-500 text-white">New</span> </h2>
                     <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
                         <table className="w-full text-left">
                             <thead className="bg-gray-200">
@@ -87,17 +94,12 @@ export default function QuizResults() {
                                 </tr>
                             </thead>
 
-                            <tbody>
-                                {students.map((student) => (
+                           <tbody>
+                                {student.map((student) => (
                                     <tr key={student.id} className="border-t">
                                         <td className="p-4">{student.name}</td>
-                                        {/* <td className="p-4">{student.score}%</td> */}
-                                        {/* <td className="p-4">
-                    <span className="px-3 py-1 rounded-full text-sm bg-gray-800 text-white">
-                      {getGrade(student.score)}
-                    </span>
-                  </td> */}
-                                        {/* <td className="p-4">{student.comment}</td> */}
+                                        <td className="p-4">{student.score}%</td>
+                                        <td className="p-4">{student.comment}</td>
                                     </tr>
                                 ))}
                             </tbody>
